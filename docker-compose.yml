@@ -1,7 +1,6 @@
 version: '3.1'
 
 services:
-
   db:
     image: postgres:15
     restart: always
@@ -12,4 +11,4 @@ services:
     ports:
       - ${DB_PORT}:5432
     volumes:
-      - ./docker-data/db:/var/lib/postgresql/data`
+      - ./docker-data/db:/var/lib/postgresql/data
